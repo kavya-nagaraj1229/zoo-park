@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Park</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="icon" href="./image/icon.jpeg">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--Font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--Css-->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!--Navbar-->
+
+  <div class="navbar">
+    <h3 style="color: orangered;" class="zoo">Zoo Park</h3>
+    <div class="toggle-button" onclick="toggleNavbar()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-items">
+      <a href="#" class="navlist">Home</a>
+      <a href="#about" class="navlist">About</a>
+      <a href="#gallery" class="navlist">Gallery</a>
+      <a href="#animals" class="navlist">Animals</a>
+      <a href="#contact" class="navlist">Contact</a>
+      <a href="#" class="navlist" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</a>
+      <a href="#" class="navlist" data-bs-toggle="modal" data-bs-target="#feedbackModal">Feedback</a>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Log in</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn1 w-80">Log in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feedback Modal -->
+  <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="feedbackModalLabel">Feedback Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Name Field -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+
+            <!-- Feedback Textarea -->
+            <div class="mb-3">
+              <label for="feedback" class="form-label">Your Feedback</label>
+              <textarea class="form-control" id="feedback" rows="4" placeholder="Enter your feedback here"></textarea>
+            </div>
+
+            <!-- Rating (Select) -->
+            <div class="mb-3">
+              <label for="rating" class="form-label">Rate Us</label>
+              <select class="form-select" id="rating">
+                <option selected>Select Rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+              </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid">
+              <button type="submit" class="btn1">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <marquee class="marquee" behavior="scroll" direction="left" scrollamount="5">
+    Contact Us: Address: 123 Kottai colony, Namakkal | Phone: +91 9876543210 | Welcome to our website, your go-to destination for all things related to our services!
+</marquee>
+
+    <div class="whatsapp">
+   <img src="./image/what.gif" alt="" width="200px" height="70px" class="what">
+   </div>
+   <div class="elephant">
+    <img src="./image/elepahnt.gif" alt="" width="150px" height="150px" class="eli">
+   </div>
+  <div class="background-image" data-aos="zoom-in-up" data-aos-duration="1000">
+    <img src="./image/zoopark.jpeg" alt="Rotating image" class="background-image">
+  </div>
+  <div class="background-content" data-aos="zoom-in-up" data-aos-duration="1000">
+    <h2 class="background-h2">Welcome to Zoo Park</h2>
+    <p class="background-para" style="font-size: 18px;">Zoo park is a place where a variety of animals are kept in enclosures for public
+      viewing and education. It provides a safe environment for endangered species and helps with conservation
+      efforts. Zoos also offer a learning opportunity for visitors, especially children, to understand wildlife
+      and eco systems.</p>
+    <button class="btn1">Park View</button><button class="btn1">Here Me</button>
+  </div> <br> <br>
+
+  <center id="about">ABOUT US</center> <br>
+  <div class="about" data-aos="zoom-in-up" data-aos-duration="1000">
+    <img src="./image/about.jpeg" alt="" class="about-img"> <br>
+    <div class="aboutpara">
+      <h3 class="h3">WHAT ABOUT IN ZOO PARK</h3>
+      <p class="about-p">Zoo Park is a wildlife conservation area designed to educate visitors about animals and
+        their habitats. It features a diverse collection of species from around the world, including mammals,
+        birds, reptiles, and amphibians. The park emphasizes conservation efforts, promoting awareness of
+        endangered species and the importance of biodiversity. </p>
+      <button class="btn2">View</button>
+    </div>
+  </div> <br> <br> 
+
+  <center id="animals">ANIMALS</center> <br>
+  <div class="animals-parent">
+    <div class="animals1" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/animal1.jpeg" alt="Animal 1" width="300px" height="400px" class="animalimg">
+      <h4 class="h4" style="text-align: center;">Tiger</h4>
+      <button class="btn3" onclick="showDetails()">See Details</button>
+    </div>
+
+    <div class="animals2" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/animal2.jpeg" alt="" width="300px" height="400px" class="animalimg">
+      <h4 class="h4" align="center">Lion</h4>
+      <button class="btn3" onclick="showDetails()">See Details</button>
+    </div>
+    <div class="animals3" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/animal3.jpeg" alt="" width="300px" height="400px" class="animalimg">
+      <h4 class="h4" align="center">Elephant</h4>
+      <button class="btn3" onclick="showDetails()">See Details</button>
+    </div> 
+    <div class="animals4" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/animal4.jpeg" alt="" width="300px" height="400px" class="animalimg">
+      <h4 class="h4" align="center">Cameleon</h4>
+      <button class="btn3" onclick="showDetails()">See Details</button>
+    </div>
+    <div class="animals1" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/animal5.jpeg" alt="" width="300px" height="400px" class="animalimg">
+      <h4 class="h4" align="center">Wolf</h4>
+      <button class="btn3" onclick="showDetails()">See Details</button>
+    </div>
+    <div class="animals2" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/animal6.jpeg" alt="" width="300px" height="400px" class="animalimg">
+      <h4 class="h4" align="center">Leopard</h4>
+      <button class="btn3" onclick="showDetails()">See Details</button>
+    </div>
+    <div class="animals3" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/animal7.jpeg" alt="" width="300px" height="400px" class="animalimg">
+      <h4 class="h4" align="center">Deer</h4>
+      <button class="btn3" onclick="showDetails()">See Details</button>
+    </div>
+    <div class="animals4" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/animmal8.jpeg" alt="" width="300px" height="400px" class="animalimg">
+      <h4 class="h4" align="center">Monkey</h4>
+      <button class="btn3" onclick="showDetails()">See Details</button>
+    </div>
+  </div>
+
+  <div class="about" data-aos="zoom-in-up" data-aos-duration="1000">
+    <img src="./image/img8.jpeg" alt="" class="about-img"> <br>
+    <div class="aboutpara">
+      <h3 class="h3" style="color: orangered;">STAY WITH PETS</h3>
+      <p class="about-p">Zoo Park is a wildlife conservation area designed to educate visitors about animals and
+        their habitats.</p>
+        <div class="container mt-5">
+          <button type="button" class="btn5" data-bs-toggle="modal" data-bs-target="#orderModal">
+              See Attractions
+          </button>
+      </div>
+    </div>
+  </div> <br>
+
+  <center id="center">PRICING</center>
+  <div class="pricing">
+    <div class="pricing-box" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/img9.jpeg" alt="" width="200px" height="200px" class="pricing-img"> <br> <br>
+      <h5 align="center"><b>Indviduals</b></h5> <br>
+      <h6 align="center" style="color: orangered;"><i class="fa-solid fa-indian-rupee-sign"></i> 250</h6>
+      <p align="center">The Entrance is From 8:00 To 2:00</p>
+      <button class="btn6">Choose Plan</button>
+    </div>
+    <div class="pricing-box" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/img10.jpeg" alt="" width="200px" height="200px" class="pricing-img"> <br> <br>
+      <h5 align="center"><b>School</b></h5> <br>
+      <h6 align="center" style="color: orangered;"><i class="fa-solid fa-indian-rupee-sign"></i> 300</h6>
+      <p align="center">The Entrance is From 8:00 To 2:00</p>
+      <button class="btn6">Choose Plan</button>
+    </div>
+    <div class="pricing-box" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="./image/img11.jpeg" alt="" width="200px" height="200px" class="pricing-img"> <br> <br>
+      <h5 align="center"><b>Trips</b></h5> <br>
+      <h6 align="center" style="color: orangered;"><i class="fa-solid fa-indian-rupee-sign"></i> 500</h6>
+      <p align="center">The Entrance is From 8:00 To 2:00</p>
+      <button class="btn6">Choose Plan</button>
+    </div>
+  </div>
+
+  <div class="container mt-5"data-aos="zoom-in-up" data-aos-duration="1000">
+    <center id="contact">Contact Us</center>
+    <form id="contactForm" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="invalid-feedback">
+          Please enter your name.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">
+          Please enter a valid email.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+        <div class="invalid-feedback">
+          Please enter a message.
+        </div>
+      </div>
+
+      <button type="submit" class="btn6">Submit</button>
+    </form>
+
+    <!-- Alert -->
+    <div class="alert alert-success mt-3 d-none" id="successAlert">
+      Your message has been sent successfully!
+    </div>
+
+  </div>
+  
+
+      <!-- Modal Structure -->
+      <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Zoo Park - Order Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Order Form -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="itemName" class="form-label">Item Name</label>
+                            <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" value="1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Price per Item</label>
+                            <input type="number" class="form-control" id="price" placeholder="Enter price" value="1025" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="totalPrice" class="form-label">Total Price</label>
+                            <input type="text" class="form-control" id="totalPrice" placeholder="Total price" value="100" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Enter your name">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn1" onclick="submitOrder()">Submit Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer data-aos="zoom-in-up" data-aos-duration="1000">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>About the Zoo</h4>
+          <p>Discover the amazing wildlife at our zoo. We are committed to conservation and education.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Email: zoopark@gmail.com</p>
+          <p>Phone: +91 9876543210</p>
+          <p>Location: 23A Kottai colony,Namakkal</p>
+        </div>
+    
+        <div class="footer-section">
+          <h4>Opening Hours</h4>
+          <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
+          <p>Sat-Sun: 10:00 AM - 6:00 PM</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <a href="#"><img src="./image/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="./image/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="./image/download.jpeg" alt="Instagram"></a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Zoo Park. Disigned By  <span style="color: orangered;">  N.KAVYA</span></p>
+      </div>
+    </footer>
+    
+
+    <!-- JavaScript Code -->
+    <script>
+        const pricePerItem = 1025; // Price per item
+        const quantityInput = document.getElementById('quantity');
+        const totalPriceInput = document.getElementById('totalPrice');
+
+        // Function to update total price based on quantity and price per item
+        function updateTotalPrice() {
+            const quantity = parseInt(quantityInput.value) || 1; // Get quantity value
+            const totalPrice = quantity * pricePerItem; // Calculate total price
+            totalPriceInput.value = totalPrice; // Update total price field
+        }
+
+        // Increment quantity by 1 and update total price
+        quantityInput.addEventListener('change', function() {
+            updateTotalPrice(); // Update total price on quantity change
+        });
+
+        // Function to submit the order
+        function submitOrder() {
+            const itemName = document.getElementById("itemName").value;
+            const quantity = quantityInput.value;
+            const price = document.getElementById("price").value;
+            const customerName = document.getElementById("customerName").value;
+
+            if (itemName && quantity && price && customerName) {
+                alert(`Order Confirmed!\nItem: ${itemName}\nQuantity: ${quantity}\nPrice per Item: ${price}\nTotal Price: ${quantity * price}\nCustomer: ${customerName}`);
+                // Close modal after submitting
+                const orderModal = bootstrap.Modal.getInstance(document.getElementById('orderModal'));
+                orderModal.hide();
+            } else {
+                alert("Please fill out all fields before submitting.");
+            }
+        }
+
+        // Reset quantity to 1 each time the modal is opened
+        document.getElementById('orderModal').addEventListener('show.bs.modal', function () {
+            quantityInput.value = 1; // Reset quantity to 1
+            updateTotalPrice(); // Update total price
+        });
+
+        // Initialize total price on page load
+        updateTotalPrice();
+    </script>
+    <script>
+      // Form validation and submission
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+  
+        if (this.checkValidity()) {
+          // Show success message
+          document.getElementById('successAlert').classList.remove('d-none');
+          
+          // Reset form after submission
+          this.reset();
+          this.classList.remove('was-validated');
+        } else {
+          this.classList.add('was-validated');
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+  <!-- Bootstrap JS (requires Popper.js for modals) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleNavbar() {
+      const navItems = document.querySelector('.nav-items');
+      navItems.classList.toggle('active');
+    }
+  </script>
+
+  <script>
+    function showDetails() {
+      alert("This is a Tiger. Tigers are the largest species among the Felidae family.");
+    }
+  </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>
